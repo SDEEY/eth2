@@ -9,6 +9,7 @@ const Title = 'The Weedez Club'
 const supply = 4200
 
 document.title = Title
+document.getElementById('favicon').setAttribute('href', image)
 
 function App() {
     const [opacity, setOpacity] = useState(0)
