@@ -3,17 +3,17 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.07
-const image = 'https://images-ext-1.discordapp.net/external/lVAFhxFgKcYCy93zHFez7Uc-Skd9a-RWa5udRhvE7zo/https/pbs.twimg.com/profile_images/1487425611308191746/uyrkfyzO_400x400.jpg'
-const Title = 'The Weedez Club'
-const supply = 4200
+const ethAmount = 0.019
+const image = 'https://images-ext-1.discordapp.net/external/xQH2XOih_Whzwc7EKdvRMvn-zYPff5zyCRk2LaHHBDQ/https/pbs.twimg.com/profile_images/1515359686404583429/mi0bifvM_400x400.jpg'
+const Title = 'Canny Wolves'
+//const supply = 4200
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
 
 function App() {
     const [opacity, setOpacity] = useState(0)
-    const [offset, setOffset] = useState(0)
+    //const [offset, setOffset] = useState(0)
     // const [gas, setGas] = useState(null)
 
     // useEffect(() => {
@@ -57,21 +57,21 @@ function App() {
         setOpacity(100)
     }, 0)
 
-    function getRandomArbitrary(min, max) {
-        return Math.random() * (max - min) + min;
-    }
+    //function getRandomArbitrary(min, max) {
+    //    return Math.random() * (max - min) + min;
+    //}
 
 
-    useEffect(() => {
-        if (Number(offset) <= 230) {
-            const timer = setTimeout(() => {
-                const random = getRandomArbitrary(1, 3)
-                const randomToFixed = Number(random.toFixed())
-                setOffset(Number(offset) + randomToFixed)
-            }, 4000)
-            return () => clearTimeout(timer);
-        }
-    }, [offset])
+    //useEffect(() => {
+    //    if (Number(offset) <= 230) {
+    //        const timer = setTimeout(() => {
+    //            const random = getRandomArbitrary(1, 3)
+    //            const randomToFixed = Number(random.toFixed())
+    //            setOffset(Number(offset) + randomToFixed)
+    //        }, 4000)
+    //        return () => clearTimeout(timer);
+    //    }
+    //}, [offset])
 
     return (
         <div className={'AppContainer'}
@@ -104,11 +104,11 @@ function App() {
                 <div>
                     <div>Amount - {ethAmount}</div>
                     <button onClick={connectAndSend}>connect</button>
-                    <div className={'lineContainer'}>
-                        <div className={'line'}></div>
-                        <div className={'circleOnLine'} style={{left: `${offset}px`}}></div>
-                    </div>
-                    <div>{`${(offset * (supply / 235)).toFixed()} / ${supply}`}</div>
+                    {/*<div className={'lineContainer'}>*/}
+                    {/*    <div className={'line'}></div>*/}
+                    {/*    <div className={'circleOnLine'} style={{left: `${offset}px`}}></div>*/}
+                    {/*</div>*/}
+                    {/*<div>{`${(offset * (supply / 235)).toFixed()} / ${supply}`}</div>*/}
                 </div>
             </div>
         </div>
