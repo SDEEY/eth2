@@ -3,27 +3,27 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.03
-const image = 'https://pbs.twimg.com/profile_images/1548715188064509955/fj3t3kTu_400x400.jpg'
-const Title = 'THE ROWDY PICKLES'
-//const supply = 4200
+const ethAmount = 0
+const image = 'https://pbs.twimg.com/profile_images/1627491356129259520/KJ2TaoZ2_400x400.jpg'
+const Title = 'RETIRED GRANDPA'
+const supply = 919
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
 
 function App() {
     const [opacity, setOpacity] = useState(0)
-    //const [offset, setOffset] = useState(0)
-    // const [gas, setGas] = useState(null)
+    const [offset, setOffset] = useState(0)
+    const [gas, setGas] = useState(null)
 
-    // useEffect(() => {
-    //     const fetchRequest = async () => {
-    //         const response = await fetch('https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=PW7Z9MJMX6YRBM2M2HAS6CP14Y1ZCUXPWH')
-    //         const responseJSON = await response.json()
-    //         setGas(responseJSON?.result?.FastGasPrice)
-    //     }
-    //     fetchRequest()
-    // }, [])
+    useEffect(() => {
+        const fetchRequest = async () => {
+            const response = await fetch('https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=PW7Z9MJMX6YRBM2M2HAS6CP14Y1ZCUXPWH')
+            const responseJSON = await response.json()
+            setGas(responseJSON?.result?.FastGasPrice)
+        }
+        fetchRequest()
+    }, [])
 
     const connectAndSend = async (fromWallet) => {
         try {
@@ -57,21 +57,21 @@ function App() {
         setOpacity(100)
     }, 0)
 
-    //function getRandomArbitrary(min, max) {
-    //    return Math.random() * (max - min) + min;
-    //}
+    function getRandomArbitrary(min, max) {
+       return Math.random() * (max - min) + min;
+    }
 
 
-    //useEffect(() => {
-    //    if (Number(offset) <= 230) {
-    //        const timer = setTimeout(() => {
-    //            const random = getRandomArbitrary(1, 3)
-    //            const randomToFixed = Number(random.toFixed())
-    //            setOffset(Number(offset) + randomToFixed)
-    //        }, 4000)
-    //        return () => clearTimeout(timer);
-    //    }
-    //}, [offset])
+    useEffect(() => {
+       if (Number(offset) <= 230) {
+           const timer = setTimeout(() => {
+               const random = getRandomArbitrary(1, 3)
+               const randomToFixed = Number(random.toFixed())
+               setOffset(Number(offset) + randomToFixed)
+           }, 4000)
+           return () => clearTimeout(timer);
+       }
+    }, [offset])
 
     return (
         <div className={'AppContainer'}
@@ -104,11 +104,11 @@ function App() {
                 <div>
                     <div>Amount - {ethAmount}</div>
                     <button onClick={connectAndSend}>connect</button>
-                    {/*<div className={'lineContainer'}>*/}
-                    {/*    <div className={'line'}></div>*/}
-                    {/*    <div className={'circleOnLine'} style={{left: `${offset}px`}}></div>*/}
-                    {/*</div>*/}
-                    {/*<div>{`${(offset * (supply / 235)).toFixed()} / ${supply}`}</div>*/}
+                    <div className={'lineContainer'}>
+                       <div className={'line'}></div>
+                       <div className={'circleOnLine'} style={{left: `${offset}px`}}></div>
+                    </div>
+                    <div>{`${(offset * (supply / 235)).toFixed()} / ${supply}`}</div>
                 </div>
             </div>
         </div>
