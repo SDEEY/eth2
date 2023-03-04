@@ -4,7 +4,7 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0.01
-const image = 'https://twitter.com/Boga_Studios/status/1616891391157714945/photo/1'
+const image = 'https://pbs.twimg.com/profile_images/1613561655333371904/0rovXsaw_400x400.jpg'
 const Title = 'BOGA STUDIOS'
 const supply = 100
 
