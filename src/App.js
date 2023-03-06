@@ -4,9 +4,9 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0
-const image = 'https://pbs.twimg.com/profile_images/1542951163695431680/_lpTZpsx_400x400.jpg'
-const Title = 'MetaStar Strikers'
-const supply = 777
+const image = 'https://pbs.twimg.com/profile_images/1547220069469544448/bQ3xCsj5_400x400.jpg'
+const Title = 'Soltype'
+const supply = 222
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
