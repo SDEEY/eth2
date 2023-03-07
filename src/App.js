@@ -4,9 +4,9 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0
-const image = 'https://pbs.twimg.com/profile_images/1547220069469544448/bQ3xCsj5_400x400.jpg'
-const Title = 'Soltype'
-const supply = 222
+const image = 'https://pbs.twimg.com/profile_images/1623057813412151303/XkyzUjkQ_400x400.jpg'
+const Title = 'Panda Jewels'
+const supply = 2222
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
