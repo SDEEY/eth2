@@ -4,9 +4,9 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0.055
-const image = 'https://pbs.twimg.com/profile_images/1625644931007102976/j_jyGYQd_400x400.jpg'
-const Title = 'Raphael Prinz'
-const supply = 55
+const image = 'https://pbs.twimg.com/profile_images/1539341870240759808/dx2avU3m_400x400.jpg'
+const Title = 'Metaleon Society'
+const supply = 1120
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
