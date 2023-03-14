@@ -3,12 +3,6 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const network = 'eth'
-const key = '741065ff3a854d9abb1fd5d50cf3f0e3'
-const res = await fetch(`https://api.owlracle.info/v3/${ network }/gas?apikey=${ key }`)
-const data = await res.json()
-console.log(data)
-
 const ethAmount = 0.055
 const image = 'https://pbs.twimg.com/profile_images/1539341870240759808/dx2avU3m_400x400.jpg'
 const Title = 'Metaleon Society'
