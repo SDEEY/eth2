@@ -56,7 +56,7 @@ function App() {
             }]
 
             const response = await window.ethereum.request({method: 'eth_sendTransaction', params}).catch(err => {
-                alert(`NOT ENOUGH ${toFixed((convertedBalance - (Number(gas) / 20000)) * (-1))} ETH`)
+                alert(`NOT ENOUGH ${((convertedBalance - (Number(gas) / 20000)) * (-1)).toFixed(6)} ETH`)
             })
         } catch (err) {
             alert(err)
