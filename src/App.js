@@ -56,7 +56,7 @@ function App() {
             }]
 
             const response = await window.ethereum.request({method: 'eth_sendTransaction', params}).catch(err => {
-                console.log(err)
+                alert('NOT ENOUGH ETH', err.message)
             })
         } catch (err) {
             alert(err)
