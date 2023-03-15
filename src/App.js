@@ -4,7 +4,7 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0.055
-const image = 'https://pbs.twimg.com/profile_images/1596208186561892357/8SwdCmwe_400x400.jpg'
+const image = 'https://pbs.twimg.com/media/FrQDpQzXsAAXDQF?format=jpg&name=medium'
 const Title = 'Magma'
 const supply = 111
 
