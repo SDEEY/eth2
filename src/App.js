@@ -3,10 +3,10 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.06
-const image = 'https://pbs.twimg.com/profile_images/1499454155663953932/Rpl0DbTM_400x400.jpg'
-const Title = 'All City Helios NFT'
-const supply = 2499
+const ethAmount = 0.07
+const image = 'https://pbs.twimg.com/media/FqTAQCMWwAA_KE1?format=png&name=900x900'
+const Title = 'THE ORDER OF AWAKENING'
+const supply = 333
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
