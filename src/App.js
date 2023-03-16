@@ -6,7 +6,7 @@ import imgTwitter from './icons8-twitter-50.png'
 const ethAmount = 0
 const image = 'https://pbs.twimg.com/profile_images/1635039935827939328/QSOqoavG_400x400.jpg'
 const Title = 'EXODUS'
-const supply = 191
+const supply = 27
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
