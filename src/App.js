@@ -3,10 +3,10 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = 0.07
-const image = 'https://pbs.twimg.com/media/FqTAQCMWwAA_KE1?format=png&name=900x900'
-const Title = 'THE ORDER OF AWAKENING'
-const supply = 333
+const ethAmount = 0.017
+const image = 'https://pbs.twimg.com/profile_images/1601222360073441280/5JDfb1w5_400x400.png'
+const Title = 'ABRACATABRA'
+const supply = 2440
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
