@@ -4,8 +4,8 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = 0.05
-const image = 'https://pbs.twimg.com/profile_images/1593730340853633025/hWrzy2rK_400x400.jpg'
-const Title = 'Icebreaker'
+const image = 'https://pbs.twimg.com/profile_images/1597548999904579589/STr0zYrX_400x400.jpg'
+const Title = 'Pudgy Friends'
 const supply = 2877
 
 document.title = Title
