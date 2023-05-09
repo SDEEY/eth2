@@ -6,7 +6,7 @@ import imgTwitter from './icons8-twitter-50.png'
 const ethAmount = '0 / 0.01 / 0.02'
 const image = 'https://pbs.twimg.com/profile_images/1647713180636807170/4mnJagyT_400x400.jpg'
 const Title = 'Vikingz NFT'
-const supply = 3333
+const supply = 771
 
 document.title = Title
 document.getElementById('favicon').setAttribute('href', image)
