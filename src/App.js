@@ -5,7 +5,7 @@ import imgTwitter from './icons8-twitter-50.png'
 
 const ethAmount = '0.008/0.013'
 const image = 'https://pbs.twimg.com/profile_images/1623894228538429440/cYFpWAMW_400x400.jpg'
-const Title = 'No.Use NFT'
+const Title = 'No Use NFT'
 const supply = 3771
 
 document.title = Title
